@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <title>Combinar Productos</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div>
+    <h2>Agregar Producto:</h2>
+    <div class="form-group">
+      <label for="productName">Nombre del Producto:</label>
+      <input type="text" id="productName" placeholder="Ingrese el nombre del producto">
+    </div>
+    <div class="form-group">
+      <label for="productQuantity">Cantidad del Producto (gramos):</label>
+      <input type="number" id="productQuantity" placeholder="Ingrese la cantidad del producto">
+    </div>
+    <div class="form-group">
+      <label for="productPrice">Precio del Producto por gramo:</label>
+      <input type="number" id="productPrice" step="0.01" placeholder="Ingrese el precio del producto">
+    </div>
+    <button id="addProductButton">Agregar Producto</button>
+
+    <h2>Productos Seleccionados:</h2>
+    <div id="selectedProducts"></div>
+
+    <h2>Combinar Productos:</h2>
+    <div class="form-group">
+      <label for="combinedProductName">Nombre del Producto Combinado:</label>
+      <input type="text" id="combinedProductName" placeholder="Ingrese el nombre del producto combinado">
+    </div>
+    <div class="form-group">
+      <label for="combinedProductQuantity">Cantidad del Producto Combinado:</label>
+      <input type="number" id="combinedProductQuantity" placeholder="Ingrese la cantidad del producto combinado">
+    </div>
+    <div id="availableProducts"></div>
+    <button id="combineProductsButton">Combinar Productos</button>
+
+    <h2>Listado de Productos:</h2>
+    <div id="productList"></div>
+
+    <h2>Historial de Productos Combinados:</h2>
+    <button id="printHistoryButton">Imprimir Historial en PDF</button>
+    <div id="soldProducts"></div>
+
+    <script src="script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+  </div>
+</body>
+</html>
